@@ -170,3 +170,138 @@ background: black;
 
 }
 /* SECCION DE SELECCION DE PERFIL  */
+.profile{
+    position: fixed;
+    display: inline-flex;
+    right: 0;
+    margin: 0;
+    height: 0%;
+    transition: height 0.5s ease-in-out;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.profile:hover {
+    display: inline-block;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: auto;
+    background: #131313;
+    border-right: 1px solid rgb(82, 82, 82);
+    border-left: 1px solid rgb(82, 82, 82);
+    border-bottom: 1px solid rgb(82, 82, 82);
+    animation-name: viewprofiles;
+    animation-duration: 0.3s;
+}
+
+.avatar{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;    
+  
+}
+
+.profile-selected{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.profile-selected .avatar{
+  margin: 20px;
+}
+
+.profile:hover p{
+    display: inline;
+}
+
+.profile p {
+    color: white;
+    
+}
+
+
+/* animation keyframe  */
+@keyframes viewprofiles {
+    0% {
+        top: -50px;
+        opacity: 0;
+       
+    }
+    50% {
+        opacity: 55%;
+        
+    }
+    100% {
+        top: 0px;
+        opacity: 100%;
+    }
+}
+
+.profile:hover .profile-selected{
+    border-bottom: 1px solid rgb(82, 82, 82);
+}
+
+.profile-nav{
+    display: none;
+    margin-right: 30px;
+}
+
+.profile:hover .profile-nav{
+    display: block;
+   
+}
+
+.profile-nav-profiles p{
+    color: white;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.header li{
+    list-style: none;
+  
+}
+
+.profile-nav-profiles li{
+    display: flex;
+    align-items: center;
+}
+
+.profile-nav-profiles img{
+   margin-left: 15px;
+   margin-top: 15px;
+}
+
+.profile-nav-options li{
+    margin: 20px;
+}
+
+.profile-nav-options a{
+    color: white;
+}
+
+.plus-perfil{
+    margin-top: 15px;
+    margin-left: 15px;
+    padding: 12px;
+    background: rgb(82, 82, 82);
+    border-radius: 50px;
+    display: inline-flex;
+}
+
+
+
+.plus-perfil svg{
+    display: block;
+    margin: auto;
+    justify-content: center;
+}
+
+.plus-perfil:hover{
+    background: rgb(102, 102, 102);
+    
+}
