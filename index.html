@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css">
     <!-- CSS -->
     <link rel="stylesheet" href="CSS/header.css">
+    <link rel="stylesheet" href="CSS/slider.css">
     <link rel="shortcut icon" href="IMG/icons/logo.svg" type="image/x-icon">
     <title>Disney Plus GSB</title>
 
@@ -134,21 +135,28 @@
             <nav class="profile-nav">
                 <ul class="profile-nav-profiles">
                     <li>
-                        <img class="avatar" src="IMG/perfil/perfil/perfil1.png" alt="imagen perfil" onclick="changeimg('IMG/perfil/perfil/perfil1.png');changetext('Thanos')">
+                        <img class="avatar" src="IMG/perfil/perfil/perfil1.png" alt="imagen perfil"
+                            onclick="changeImg('IMG/perfil/perfil/perfil1.png');changeText('Thanos')">
                         <p>Thanos</p>
                     </li>
                     <li>
-                        <img class="avatar" src="IMG/perfil/perfil/perfil2.png" alt="imagen perfil" onclick="changeimg('IMG/perfil/perfil/perfil2.png');changetext('Ironman')">
+                        <img class="avatar" src="IMG/perfil/perfil/perfil2.png" alt="imagen perfil"
+                            onclick="changeImg('IMG/perfil/perfil/perfil2.png');changeText('Ironman')">
                         <p>Ironman</p>
                     </li>
                     <li>
-                        <img class="avatar" src="IMG/perfil/perfil/perfil3.png" alt="imagen perfil" onclick="changeimg('IMG/perfil/perfil/perfil3.png');changetext('Spiderman')">
+                        <img class="avatar" src="IMG/perfil/perfil/perfil3.png" alt="imagen perfil"
+                            onclick="changeImg('IMG/perfil/perfil/perfil3.png');changeText('Spiderman')">
                         <p>Spiderman</p>
                     </li>
 
                     <li>
                         <div class="plus-perfil">
-                            <svg viewBox="0 0 36 36" style="height: 24px; min-width: 24px; width: 24px; z-index: auto;"><path d="M16.469 17.219V5.5a1 1 0 0 1 1-1h.312a1 1 0 0 1 1 1v11.719H30.5a1 1 0 0 1 1 1v.312a1 1 0 0 1-1 1H18.781V31.25a1 1 0 0 1-1 1h-.312a1 1 0 0 1-1-1V19.531H4.75a1 1 0 0 1-1-1v-.312a1 1 0 0 1 1-1h11.719z"></path></svg>
+                            <svg viewBox="0 0 36 36" style="height: 24px; min-width: 24px; width: 24px; z-index: auto;">
+                                <path
+                                    d="M16.469 17.219V5.5a1 1 0 0 1 1-1h.312a1 1 0 0 1 1 1v11.719H30.5a1 1 0 0 1 1 1v.312a1 1 0 0 1-1 1H18.781V31.25a1 1 0 0 1-1 1h-.312a1 1 0 0 1-1-1V19.531H4.75a1 1 0 0 1-1-1v-.312a1 1 0 0 1 1-1h11.719z">
+                                </path>
+                            </svg>
                         </div>
                         <p>Crear Perfil:</p>
                     </li>
@@ -169,7 +177,34 @@
 
     </header>
 
+    <!-- seccion del slider  -->
+    <div class="container-general">
+        <!-- slider films -->
 
+        <div class="slider-films">
+            <div class="slider center">
+                <div class="slide">
+                    <div class="cl">
+                        <img src="IMG/slider/1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="cl">
+                        <img src="IMG/slider/2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="cl">
+                        <img src="IMG/slider/3.jpg" alt="">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="cl">
+                        <img src="IMG/slider/4.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
 
@@ -178,11 +213,14 @@
 
 
 </body>
-<!-- SCRIPT JS -->
-<script src="js/script.js"></script>
-
 <!-- SLIDER JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+<!-- SCRIPT JS -->
+<script src="js/script.js"></script>
+<script src="js/slider.js"></script>
+
+
 
 </html>
